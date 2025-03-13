@@ -29,7 +29,7 @@ pub struct Bot {
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct UserAgentSet {
-    pub humans: HashMap<String, Human>,
+    pub humans: HashMap<String, Vec<Human>>,
     pub bots: Vec<Bot>,
 }
 
